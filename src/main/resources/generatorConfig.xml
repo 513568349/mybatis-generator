@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!--  <classPathEntry location="D:\maven-repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar"/>  -->
+    <properties resource="mysql.properties"></properties>
+
+    <context id="context1" targetRuntime="MyBatis3">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$"/>
+            <property name="replaceString" value="Condition"/>
+        </plugin>
+
+        <plugin type="com.fengjr.mybatis.RenameExampleAndPrimaryKeyPlugin" />
+        <plugin type="com.fengjr.mybatis.MysqlPagingPlugin" />
+        <plugin type="com.fengjr.mybatis.CommentPlugin">
+            <!-- 制定java bean的作者，默认情况下会读取计算机当前用户作为作者 -->
+            <!--<property name="modelClassAuthor" value="p0po" />-->
+        </plugin>
+
+        <commentGenerator>
+            <!-- 不生成原生的注解信息 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection
+                driverClass="${driver}"
+                connectionURL="${url}"
+                userId="${username}"
+                password="${password}"/>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.fengjr.trade.dao.model.db15" targetProject="E:\workbench\gitlab\mybatis-generator\com-fengjr-domain\src\main\java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="com.fengjr.trade.dao.mapper.db15" targetProject="E:\workbench\gitlab\mybatis-generator\com-fengjr-dao\src\main\resources"/>
+
+        <javaClientGenerator targetPackage="com.fengjr.trade.dao.mapper.db15" targetProject="E:\workbench\gitlab\mybatis-generator\com-fengjr-dao\src\main\java" type="XMLMAPPER"/>
+
+        <!--
+        <table tableName="LN_FENG_APPROVAL_HISTORY" domainObjectName="LnFengApprovalHistory">
+            <generatedKey column="id" identity="true" sqlStatement="mysql"/>
+    -->
+            <!--
+            <columnOverride column="type" javaType="com.krplus.enums.OrgType"></columnOverride>
+            -->
+       <!--
+        </table>
+    -->
+
+        <table tableName="LN_FENG_APPROVAL_HISTORY" domainObjectName="FengApprovalHistory"></table>
+        <table tableName="LN_LOAN_RECEIPT" domainObjectName="LoanReceipt"></table>
+        <table tableName="LN_LOAN_USER_REQUEST_INFO" domainObjectName="LoanUserRequestInfo"></table>
+        <table tableName="LN_PARTNER_APPROVAL_HISTORY" domainObjectName="PartnerApprovalHistory"></table>
+        <table tableName="LN_USER_QUESTION" domainObjectName="UserQuestion"></table>
+        <table tableName="RF_AUTOBID_REPAYMETHOD" domainObjectName="AutobidRepaymethod"></table>
+        <table tableName="RF_CONTRACT_USER" domainObjectName="ContractUser"></table>
+        <table tableName="RF_EMP_ROLE" domainObjectName="EmpRole"></table>
+        <table tableName="RF_ENTITY_TAG" domainObjectName="EntityTag"></table>
+        <table tableName="RF_PRIVILEGE" domainObjectName="Privilege"></table>
+        <table tableName="RF_REQUEST_MORTGAGETYPE" domainObjectName="RequestMortgagetype"></table>
+        <table tableName="TB_ACTIVITY" domainObjectName="Activity"></table>
+        <table tableName="TB_BATCHJOB" domainObjectName="Batchjob"></table>
+        <table tableName="TB_BATCHJOB_TASK" domainObjectName="BatchjobTask"></table>
+        <table tableName="TB_BRANCH" domainObjectName="Branch"></table>
+        <table tableName="TB_CARD_RECORD" domainObjectName="CardRecord"></table>
+        <table tableName="TB_CERTIFICATE" domainObjectName="Certificate"></table>
+        <table tableName="TB_CERTIFICATE_RECORD" domainObjectName="CertificateRecord"></table>
+        <table tableName="TB_CLAIM" domainObjectName="Claim"></table>
+        <table tableName="TB_CLAIM_REPAYMENT_PLAN" domainObjectName="ClaimRepaymentPlan"></table>
+        <table tableName="TB_CLIENT" domainObjectName="Client"></table>
+        <table tableName="TB_CLIENT_FUND_RECORD" domainObjectName="ClientFundRecord"></table>
+        <table tableName="TB_CMS_ARTICLE" domainObjectName="CmsArticle"></table>
+        <table tableName="TB_CMS_CHANNEL" domainObjectName="CmsChannel"></table>
+        <table tableName="TB_COMMENT" domainObjectName="Comment"></table>
+        <table tableName="TB_CONTRACT" domainObjectName="Contract"></table>
+        <table tableName="TB_CONTRACT_SEAL" domainObjectName="ContractSeal"></table>
+        <table tableName="TB_CONTRACT_TEMPLATE" domainObjectName="ContractTemplate"></table>
+        <table tableName="TB_CORPORATION_USER" domainObjectName="CorporationUser"></table>
+        <table tableName="TB_CORPORATION_USER_INFO" domainObjectName="CorporationUserInfo"></table>
+        <table tableName="TB_CORP_FINANCE" domainObjectName="CorpFinance"></table>
+        <table tableName="TB_COUPON_PACKAGE" domainObjectName="CouponPackage"></table>
+        <table tableName="TB_COUPON_PLACEMENT" domainObjectName="CouponPlacement"></table>
+        <table tableName="TB_COUPON_RECORD" domainObjectName="CouponRecord"></table>
+        <table tableName="TB_CREDITASSIGN" domainObjectName="Creditassign"></table>
+        <table tableName="TB_CROWDFUNDING_DREAM" domainObjectName="CrowdfundingDream"></table>
+        <table tableName="TB_CROWDFUNDING_DREAM_REWARD" domainObjectName="CrowdfundingDreamReward"></table>
+        <table tableName="TB_CROWDFUNDING_EXPERIENCE_APPLY" domainObjectName="CrowdfundingExperienceApply"></table>
+        <table tableName="TB_CROWDFUNDING_FAVORITE" domainObjectName="CrowdfundingFavorite"></table>
+        <table tableName="TB_CROWDFUNDING_INVEST" domainObjectName="CrowdfundingInvest"></table>
+        <table tableName="TB_CROWDFUNDING_INVEST_INFO" domainObjectName="CrowdfundingInvestInfo"></table>
+        <table tableName="TB_CROWDFUNDING_PROJECT" domainObjectName="CrowdfundingProject"></table>
+        <table tableName="TB_CROWDFUNDING_PROJECT_LOAN" domainObjectName="CrowdfundingProjectLoan"></table>
+        <table tableName="TB_CROWDFUNDING_REWARD" domainObjectName="CrowdfundingReward"></table>
+        <table tableName="TB_CROWDFUNDING_REWARD_RESTRICTION" domainObjectName="CrowdfundingRewardRestriction"></table>
+        <table tableName="TB_CROWDFUNDING_REWARD_RESTRICTION_GROUP" domainObjectName="CrowdfundingRewardRestrictionGroup"></table>
+        <table tableName="TB_DISBURSE_RECORD" domainObjectName="DisburseRecord"></table>
+        <table tableName="TB_EMAIL_CONFIRM" domainObjectName="EmailConfirm"></table>
+        <table tableName="TB_EMPLOYEE" domainObjectName="Employee"></table>
+        <table tableName="TB_EMPLOYEE_LOGIN_RECORD" domainObjectName="EmployeeLoginRecord"></table>
+        <table tableName="TB_EVENT_PRIZE" domainObjectName="EventPrize"></table>
+        <table tableName="TB_FACTORING" domainObjectName="Factoring"></table>
+        <table tableName="TB_FEE_ITEM" domainObjectName="FeeItem"></table>
+        <table tableName="TB_FILE_INFO" domainObjectName="FileInfo"></table>
+        <table tableName="TB_FSSACCOUNT" domainObjectName="Fssaccount"></table>
+        <table tableName="TB_FUIOU_COllECTRECORD" domainObjectName="FuiouCollectrecord"></table>
+        <table tableName="TB_FUND_ACCOUNT" domainObjectName="FundAccount"></table>
+        <table tableName="TB_FUND_EVENT" domainObjectName="FundEvent"></table>
+        <table tableName="TB_FUND_RECORD" domainObjectName="FundRecord"></table>
+        <table tableName="TB_IMAGE" domainObjectName="Image"></table>
+        <table tableName="TB_INVEST" domainObjectName="Invest"></table>
+        <table tableName="TB_INVEST_PRE_REPAYMENT" domainObjectName="InvestPreRepayment"></table>
+        <table tableName="TB_INVEST_REPAYMENT" domainObjectName="InvestRepayment"></table>
+        <table tableName="TB_LOAN" domainObjectName="Loan"></table>
+        <table tableName="TB_LOANREQUEST" domainObjectName="Loanrequest"></table>
+        <table tableName="TB_LOANREQUEST_CLAIM" domainObjectName="LoanrequestClaim"></table>
+        <table tableName="TB_LOANREQUEST_DETAIL" domainObjectName="LoanrequestDetail"></table>
+        <table tableName="TB_LOANREQUEST_FEE" domainObjectName="LoanrequestFee"></table>
+        <table tableName="TB_LOANREQUEST_PRODUCT" domainObjectName="LoanrequestProduct"></table>
+        <table tableName="TB_LOAN_ORDER" domainObjectName="LoanOrder"></table>
+        <table tableName="TB_LOAN_PRE_REPAYMENT" domainObjectName="LoanPreRepayment"></table>
+        <table tableName="TB_LOAN_PRE_REPAYMENT_STATUS" domainObjectName="LoanPreRepaymentStatus"></table>
+        <table tableName="TB_LOAN_REPAYMENT" domainObjectName="LoanRepayment"></table>
+        <table tableName="TB_MESSAGE" domainObjectName="Message"></table>
+        <table tableName="TB_MESSAGE_BODY" domainObjectName="MessageBody"></table>
+        <table tableName="TB_PAYMENTACCOUNT" domainObjectName="Paymentaccount"></table>
+        <table tableName="TB_PAYMENT_ASSIGN_RECONCILIATION" domainObjectName="PaymentAssignReconciliation"></table>
+        <table tableName="TB_PROOF" domainObjectName="Proof"></table>
+        <table tableName="TB_RANK" domainObjectName="Rank"></table>
+        <table tableName="TB_REALESTATE_RECORD" domainObjectName="RealestateRecord"></table>
+        <table tableName="TB_REAL_ESTATE" domainObjectName="RealEstate"></table>
+        <table tableName="TB_RECHARGE_RECORD" domainObjectName="RechargeRecord"></table>
+        <table tableName="TB_REPAY_ORDER" domainObjectName="RepayOrder"></table>
+        <table tableName="TB_ROLE" domainObjectName="Role"></table>
+        <table tableName="TB_SEAL" domainObjectName="Seal"></table>
+        <table tableName="TB_SOCIALUSER" domainObjectName="Socialuser"></table>
+        <table tableName="TB_TAG" domainObjectName="Tag"></table>
+        <table tableName="TB_TAG_ENTITY" domainObjectName="TagEntity"></table>
+        <table tableName="TB_TASK" domainObjectName="Task"></table>
+        <table tableName="TB_TICKET" domainObjectName="Ticket"></table>
+        <table tableName="TB_TICKET_REPLY" domainObjectName="TicketReply"></table>
+        <table tableName="TB_TRANSFER_REQUEST" domainObjectName="TransferRequest"></table>
+        <table tableName="TB_UMP_ACCOUNT" domainObjectName="UmpAccount"></table>
+        <table tableName="TB_UMP_AGREEMENT" domainObjectName="UmpAgreement"></table>
+        <table tableName="TB_UMP_SETTLE_RECHARGE_RECORD" domainObjectName="UmpSettleRechargeRecord"></table>
+        <table tableName="TB_UMP_SETTLE_RECORD" domainObjectName="UmpSettleRecord"></table>
+        <table tableName="TB_UMP_SETTLE_TENDER_RECORD" domainObjectName="UmpSettleTenderRecord"></table>
+        <table tableName="TB_UMP_SETTLE_TRANSFER_RECORD" domainObjectName="UmpSettleTransferRecord"></table>
+        <table tableName="TB_UMP_SETTLE_WITHDRAW_RECORD" domainObjectName="UmpSettleWithdrawRecord"></table>
+        <table tableName="TB_UMP_TENDER" domainObjectName="UmpTender"></table>
+        <table tableName="TB_UMP_TENDER_TRANSFER_RECORD" domainObjectName="UmpTenderTransferRecord"></table>
+        <table tableName="TB_USER" domainObjectName="User"></table>
+        <table tableName="TB_USERCREDIT_RECORD" domainObjectName="UsercreditRecord"></table>
+        <table tableName="TB_USER_AUTHENTICATE" domainObjectName="UserAuthenticate"></table>
+        <table tableName="TB_USER_AUTO_BID" domainObjectName="UserAutoBid"></table>
+        <table tableName="TB_USER_CREDIT" domainObjectName="UserCredit"></table>
+        <table tableName="TB_USER_FUND" domainObjectName="UserFund"></table>
+        <table tableName="TB_USER_GROUP" domainObjectName="UserGroup"></table>
+        <table tableName="TB_USER_INFO" domainObjectName="UserInfo"></table>
+        <table tableName="TB_USER_INVITATION" domainObjectName="UserInvitation"></table>
+        <table tableName="TB_USER_LOGIN_RECORD" domainObjectName="UserLoginRecord"></table>
+        <table tableName="TB_USER_RECORD" domainObjectName="UserRecord"></table>
+        <table tableName="TB_USER_SHIPPING_ADDRESS" domainObjectName="UserShippingAddress"></table>
+        <table tableName="TB_VEHICLE" domainObjectName="Vehicle"></table>
+        <table tableName="TB_VEHICLE_RECORD" domainObjectName="VehicleRecord"></table>
+        <table tableName="TB_VIRTUAL_ACCOUNT" domainObjectName="VirtualAccount"></table>
+        <table tableName="TB_VIRTUAL_BOOKING_RECORD" domainObjectName="VirtualBookingRecord"></table>
+        <table tableName="TB_VIRTUAL_CASH_RECORD" domainObjectName="VirtualCashRecord"></table>
+        <table tableName="ZC_XIAOHUAJIA" domainObjectName="Xiaohuajia"></table>
+        <table tableName="ZC_XIAOHUAJIA_SCHOOL" domainObjectName="XiaohuajiaSchool"></table>
+
+        <!--
+        <table tableName="TB_INVEST_FIRST_PHASE" domainObjectName="InvestFirstPhase"></table>
+        <table tableName="TB_INVEST_SECOND_PHASE" domainObjectName="InvestSecondPhase"></table>
+        <table tableName="TB_INVEST_THIRD_PHASE" domainObjectName="InvestThirdPhase"></table>
+        <table tableName="TB_INVEST_FOUTH_PHASE" domainObjectName="InvestFouthPhase"></table>
+        -->
+    </context>
+</generatorConfiguration>
