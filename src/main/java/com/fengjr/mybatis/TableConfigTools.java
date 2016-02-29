@@ -20,16 +20,16 @@ public class TableConfigTools {
             e.printStackTrace();
         }
 
-        for(String l:list){
-            l = l.trim();
-            l = l.substring(1, l.length()-1);
-            l = l.trim();
-            int index = l.indexOf('_')+1;
-            String tableObject = l.substring(index);
-            String aaa = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL,tableObject);
+        for (String str : list) {
+            str = str.trim();
+            str = str.substring(1, str.length() - 1);
+            str = str.trim();
+            int index = str.indexOf('_') + 1;
+            String tableObject = str.substring(index);
+            String aaa = CaseFormat.UPPER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, tableObject);
 
             //System.out.println(l+"  -->  "+aaa);
-            String xml = "<table tableName=\""+l+"\" domainObjectName=\""+aaa+"\"></table>";
+            String xml = "<table tableName=\"" + str + "\" domainObjectName=\"" + aaa + "\"></table>";
             System.out.println(xml);
         }
     }

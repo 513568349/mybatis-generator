@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.fengjr:fengjr-parent:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fengjr/fengjr-parent/1.0-SNAPSHOT/fengjr-parent-1.0-20150602.024041-3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fengjr/fengjr-parent/1.0-SNAPSHOT/fengjr-parent-1.0-20150602.024041-3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/fengjr/fengjr-parent/1.0-SNAPSHOT/fengjr-parent-1.0-20150602.024041-3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
