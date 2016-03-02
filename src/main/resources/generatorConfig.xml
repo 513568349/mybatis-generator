@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
     <!--  <classPathEntry location="D:\maven-repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar"/>  -->
-    <properties resource="mysql.properties"></properties>
+    <properties resource="config.properties"></properties>
 
     <context id="context1" targetRuntime="MyBatis3">
         <property name="javaFileEncoding" value="UTF-8"/>
@@ -50,9 +50,10 @@
         <table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>
         <table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>-->
 
-        <table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>
-        <table tableName="gateway_request_history" domainObjectName="RequestHistory"></table>
-        <table tableName="gateway_system" domainObjectName="System"></table>
+        <!--<table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>
+        <table tableName="gateway_request_history" domainObjectName="RequestHistory"></table>-->
+        <table tableName="gateway_failure_task" domainObjectName="FailureTask"></table>
+       <!-- <table tableName="gateway_system" domainObjectName="System"></table>-->
 
     </context>
 </generatorConfiguration>
