@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <!--  <classPathEntry location="D:\maven-repository\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar"/>  -->
+    <properties resource="config.properties"></properties>
+
+    <context id="context1" targetRuntime="MyBatis3">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$"/>
+            <property name="replaceString" value="Condition"/>
+        </plugin>
+
+        <plugin type="com.fengjr.mybatis.RenameExampleAndPrimaryKeyPlugin" />
+        <plugin type="com.fengjr.mybatis.MysqlPagingPlugin" />
+        <plugin type="com.fengjr.mybatis.CommentPlugin">
+            <!-- 制定java bean的作者，默认情况下会读取计算机当前用户作为作者 -->
+            <!--<property name="modelClassAuthor" value="p0po" />-->
+        </plugin>
+
+        <commentGenerator>
+            <!-- 不生成原生的注解信息 -->
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <jdbcConnection
+                driverClass="${driver}"
+                connectionURL="${url}"
+                userId="${username}"
+                password="${password}"/>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="${model.class.target.package}" targetProject="${project.dao.model.path}">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="${dao.class.target.package}" targetProject="${project.dao.mapper.xml.path}"/>
+        <javaClientGenerator targetPackage="${dao.xml.target.package}" targetProject="${project.dao.mapper.class.path}" type="XMLMAPPER"/>
+
+        <!--<table tableName="ins_account" domainObjectName="Account"></table>-->
+       <!-- <table tableName="ins_account_card" domainObjectName="AccountCard"></table>-->
+        <!--<table tableName="ins_account_check_edor" domainObjectName="AccountCheckEdor"></table>
+        <table tableName="ins_account_check_edor_history" domainObjectName="AccountCheckEdorHistory"></table>
+        <table tableName="ins_account_check_new" domainObjectName="AccountCheckNew"></table>
+        <table tableName="ins_account_check_new_history" domainObjectName="AccountCheckNewHistory"></table>-->
+        <!--<table tableName="ins_interest_history" domainObjectName="InterestHistory"></table>-->
+        <!--<table tableName="ins_order" domainObjectName="Order"></table>-->
+        <!--<table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>-->
+        <table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>
+        <!--<table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>
+
+        <table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>
+        <table tableName="gateway_request_history" domainObjectName="RequestHistory"></table>
+        <table tableName="gateway_failure_task" domainObjectName="FailureTask"></table>
+        <table tableName="gateway_system" domainObjectName="System"></table>-->
+
+    </context>
+</generatorConfiguration>
