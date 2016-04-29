@@ -51,8 +51,8 @@
         <table tableName="ins_account_check_new_history" domainObjectName="AccountCheckNewHistory"></table>-->
         <!--<table tableName="ins_interest_history" domainObjectName="InterestHistory"></table>-->
         <!--<table tableName="ins_order" domainObjectName="Order"></table>-->
-        <table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>
-        <!--<table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>-->
+        <!--<table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>-->
+        <table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>
         <!--<table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>
 
         <table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>
