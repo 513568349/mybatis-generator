@@ -44,7 +44,8 @@
         <javaClientGenerator targetPackage="${dao.xml.target.package}" targetProject="${project.dao.mapper.class.path}" type="XMLMAPPER"/>
 
         <!--<table tableName="ins_account" domainObjectName="Account"></table>-->
-       <!-- <table tableName="ins_account_card" domainObjectName="AccountCard"></table>-->
+       <!--  aztec  -->
+        <!-- <table tableName="ins_account_card" domainObjectName="AccountCard"></table>-->
         <!--<table tableName="ins_account_check_edor" domainObjectName="AccountCheckEdor"></table>
         <table tableName="ins_account_check_edor_history" domainObjectName="AccountCheckEdorHistory"></table>
         <table tableName="ins_account_check_new" domainObjectName="AccountCheckNew"></table>
@@ -53,12 +54,16 @@
         <!--<table tableName="ins_order" domainObjectName="Order"></table>-->
         <table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>
         <!--<table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>-->
-        <!--<table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>
+        <!--<table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>-->
 
-        <table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>
-        <table tableName="gateway_request_history" domainObjectName="RequestHistory"></table>
-        <table tableName="gateway_failure_task" domainObjectName="FailureTask"></table>
-        <table tableName="gateway_system" domainObjectName="System"></table>-->
+        <!--  ins_account -->
+        <!--<table tableName="ins_product_service_provide" domainObjectName="ProductServiceProvide" ></table>-->
+
+        <!--  gateway  -->
+        <!-- <table tableName="gateway_category_link" domainObjectName="CategoryLink"></table>-->
+        <!-- <table tableName="gateway_request_history" domainObjectName="RequestHistory"></table>-->
+        <!-- <table tableName="gateway_failure_task" domainObjectName="FailureTask"></table>-->
+        <!-- <table tableName="gateway_system" domainObjectName="System"></table>-->
 
     </context>
 </generatorConfiguration>
