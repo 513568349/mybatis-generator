@@ -44,6 +44,11 @@
         <javaClientGenerator targetPackage="${dao.xml.target.package}" targetProject="${project.dao.mapper.class.path}" type="XMLMAPPER"/>
 
         <!--<table tableName="ins_account" domainObjectName="Account"></table>-->
+
+        <!--  insurance  -->
+         <!--<table tableName="ins_order" domainObjectName="Order"></table>-->
+         <!--<table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>-->
+
        <!--  aztec  -->
         <!-- <table tableName="ins_account_card" domainObjectName="AccountCard"></table>-->
         <!--<table tableName="ins_account_check_edor" domainObjectName="AccountCheckEdor"></table>
@@ -52,11 +57,14 @@
         <table tableName="ins_account_check_new_history" domainObjectName="AccountCheckNewHistory"></table>-->
         <!--<table tableName="ins_interest_history" domainObjectName="InterestHistory"></table>-->
         <!--<table tableName="ins_order" domainObjectName="Order"></table>-->
-        <table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>
+        <!--<table tableName="ins_rebuy" domainObjectName="OrderRebuy"></table>-->
         <!--<table tableName="ins_redeem_history" domainObjectName="RedeemHistory"></table>-->
         <!--<table tableName="ins_revisit_history" domainObjectName="RevisitHistory"></table>-->
 
         <!--  ins_account -->
+        <table tableName="ins_account" domainObjectName="Account" ></table>
+        <table tableName="ins_account_contact" domainObjectName="AccountContact" ></table>
+        <table tableName="ins_account_preference" domainObjectName="AccountPreference" ></table>
         <!--<table tableName="ins_product_service_provide" domainObjectName="ProductServiceProvide" ></table>-->
 
         <!--  gateway  -->
