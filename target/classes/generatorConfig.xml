@@ -68,19 +68,24 @@
         <!--<table tableName="ins_product_service_provide" domainObjectName="ProductServiceProvide" ></table>-->
 
         <!-- ins_trade -->
-        <table tableName="bd_data" domainObjectName="BDData" ></table>
-        <table tableName="bd_sku" domainObjectName="BDSku" ></table>
-        <table tableName="bd_sku_property" domainObjectName="BDSkuProperty" ></table>
-        <table tableName="ins_order" domainObjectName="Order" ></table>
-        <table tableName="ins_order_applicant" domainObjectName="OrderApplicant" ></table>
-        <table tableName="ins_order_benefit" domainObjectName="OrderBenefit" ></table>
-        <table tableName="ins_order_buy" domainObjectName="OrderBuy" ></table>
-        <table tableName="ins_order_insured" domainObjectName="OrderInsured" ></table>
-        <table tableName="ins_order_insured_declare" domainObjectName="OrderInsuredDeclare" ></table>
-        <table tableName="ins_order_insurer" domainObjectName="OrderInsurer" ></table>
-        <table tableName="ins_order_interest" domainObjectName="OrderInsterest" ></table>
-        <table tableName="ins_order_redeem" domainObjectName="OrderRedeem" ></table>
-        <table tableName="ins_order_revisit" domainObjectName="OrderRevisit" ></table>
+        <!--<table tableName="bd_data" domainObjectName="BDData" ></table>-->
+        <!--<table tableName="bd_sku" domainObjectName="BDSku" ></table>-->
+        <!--<table tableName="bd_sku_property" domainObjectName="BDSkuProperty" ></table>-->
+        <!--<table tableName="ins_order" domainObjectName="Order" ></table>-->
+        <!--<table tableName="ins_order_applicant" domainObjectName="OrderApplicant" ></table>-->
+        <!--<table tableName="ins_order_benefit" domainObjectName="OrderBenefit" ></table>-->
+        <!--<table tableName="ins_order_buy" domainObjectName="OrderBuy" ></table>-->
+        <!--<table tableName="ins_order_insured" domainObjectName="OrderInsured" ></table>-->
+        <!--<table tableName="ins_order_insured_declare" domainObjectName="OrderInsuredDeclare" ></table>-->
+        <!--<table tableName="ins_order_insurer" domainObjectName="OrderInsurer" ></table>-->
+        <!--<table tableName="ins_order_interest" domainObjectName="OrderInsterest" ></table>-->
+        <!--<table tableName="ins_order_redeem" domainObjectName="OrderRedeem" ></table>-->
+        <!--<table tableName="ins_order_revisit" domainObjectName="OrderRevisit" ></table>-->
+        <table tableName="bd_lib_question" domainObjectName="LibQuestion" ></table>
+        <table tableName="bd_lib_question_option" domainObjectName="LibQuestionOption" ></table>
+        <table tableName="bd_questionnaire" domainObjectName="Questionnaire" ></table>
+        <table tableName="bd_questionnaire_quesion" domainObjectName="QuestionnaireQuestion" ></table>
+        <table tableName="bd_questionnaire_option" domainObjectName="QuestionnaireQuestionOption" ></table>
 
 
 
