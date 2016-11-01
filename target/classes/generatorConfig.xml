@@ -75,18 +75,29 @@
         <!--<table tableName="ins_order_applicant" domainObjectName="OrderApplicant" ></table>-->
         <!--<table tableName="ins_order_benefit" domainObjectName="OrderBenefit" ></table>-->
         <!--<table tableName="ins_order_buy" domainObjectName="OrderBuy" ></table>-->
+        <!--<table tableName="ins_order_buy_payinfo" domainObjectName="OrderBuyPayInfo" ></table>-->
+        <!--<table tableName="log_import_policy" domainObjectName="LogImportPolicy" ></table>-->
         <!--<table tableName="ins_order_insured" domainObjectName="OrderInsured" ></table>-->
         <!--<table tableName="ins_order_insured_declare" domainObjectName="OrderInsuredDeclare" ></table>-->
         <!--<table tableName="ins_order_insurer" domainObjectName="OrderInsurer" ></table>-->
         <!--<table tableName="ins_order_interest" domainObjectName="OrderInsterest" ></table>-->
         <!--<table tableName="ins_order_redeem" domainObjectName="OrderRedeem" ></table>-->
         <!--<table tableName="ins_order_revisit" domainObjectName="OrderRevisit" ></table>-->
-        <table tableName="bd_lib_question" domainObjectName="LibQuestion" ></table>
-        <table tableName="bd_lib_question_option" domainObjectName="LibQuestionOption" ></table>
-        <table tableName="bd_questionnaire" domainObjectName="Questionnaire" ></table>
-        <table tableName="bd_questionnaire_quesion" domainObjectName="QuestionnaireQuestion" ></table>
-        <table tableName="bd_questionnaire_option" domainObjectName="QuestionnaireQuestionOption" ></table>
+        <!--<table tableName="bd_lib_question" domainObjectName="LibQuestion" ></table>-->
+        <!--<table tableName="bd_lib_question_option" domainObjectName="LibQuestionOption" ></table>-->
+        <!--<table tableName="bd_questionnaire" domainObjectName="Questionnaire" ></table>-->
+        <!--<table tableName="bd_questionnaire_quesion" domainObjectName="QuestionnaireQuestion" ></table>-->
+        <!--<table tableName="bd_questionnaire_option" domainObjectName="QuestionnaireQuestionOption" ></table>-->
+        <!--<table tableName="bd_questionnaire_level" domainObjectName="QuestionnaireLevel" ></table>-->
+        <!--<table tableName="bd_product_area" domainObjectName="ProductArea" ></table>-->
+        <!--<table tableName="ins_weichat_sharing" domainObjectName="InsSharedRelation" ></table>-->
+        <table tableName="bd_activity" domainObjectName="BDActivity" ></table>
+        <table tableName="bd_activity_rule" domainObjectName="BDActivityRule" ></table>
+        <table tableName="ins_group" domainObjectName="InsGroup" ></table>
+        <table tableName="ins_group_order" domainObjectName="InsGroupOrder" ></table>
 
+        <!-- ins_trade    fengjr-insurance-trade-core   -->
+        <!--<table tableName="ins_order_buy_payinfo" domainObjectName="OrderBuyPayInfo" ></table>-->
 
 
         <!--  gateway  -->
